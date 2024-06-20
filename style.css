@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bebas Neue", sans-serif;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(#000000 50%, #8A2BE2 50% );
+    
+    
+}
+h1{
+    position: absolute;
+    top: 10%; 
+    left: 50%; 
+    padding: 4em;
+    transform: translate(-50%, -50%);
+    font-size: 1.65em;
+
+
+}
+  
+.scoreboard{
+    background-color: #3B3B3B;
+    width: 800px;
+    height: 400px;
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    padding: 4em;
+    transform: translate(-50%, -50%);
+   display: grid;
+   grid-template-columns: 2fr 1fr 2fr;
+   align-items: center;
+   border-radius: 5px;
+   gap: 1em;
+}
+.team{
+    text-align: center;
+    background-color:  #5a5a5a;
+    padding: 1em;
+    font-size: 40px;
+    border-radius: 5px;
+    font-weight: 600;
+
+   
+}
+.reset{
+    background-color: transparent;
+    border: #B026FF solid 5px;
+    border-radius: 5px;
+    font-size: 2em;
+    font-weight: 600;
+}
+.reset:hover{
+    background-color: rgb(138, 43, 226, 0.8) ;
+    transition: 0.2s ease-in-out;}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    
+}
+.team button{
+    padding: 0.5em;
+    font-size: 30px;
+    background-color: rgb(138, 43, 226, 0.8);
+    border: none;
+    outline: 0;
+    border-radius: 5px;
+    font-weight: 600;
+}
+.team button:hover{
+    background-color: #B026FF;
+    transition: 0.2s ease-in-out;
+}
+
+@media (max-width: 812px){
+    .scoreboard{
+        width: 500px;
+        
+        
+    }
+    .team{
+       padding:0.5em;
+        font-size: 30px;
+    }
+    .team button{
+        padding:0.25em;
+        font-size: 30px;
+    }
+    .reset{
+        font-size: 20px;
+    }
+    h1{
+        font-size: 16px;
+    }
+}
+@media (max-width: 515px){
+    .scoreboard{
+        width: 500px;
+        
+        
+    }
+    .team{
+       padding:0.25em;
+        font-size: 35px;
+    }
+    .team button{
+        padding:0.25em;
+        font-size: 20px;
+    }
+    .reset{
+        font-size: 15px;
+    }
+    h1{
+        font-size: 13px;
+    }
+}
+@media (max-width: 488px){
+    .scoreboard{
+        width: 370px;
+        
+        
+    }
+    .team{
+       padding:0.25em;
+        font-size: 30px;
+    }
+    .team button{
+        padding:0.25em;
+        font-size: 20px;
+    }
+    .reset{
+        font-size: 13px;
+    }
+    h1{
+        font-size: 10px;
+    }
+}
